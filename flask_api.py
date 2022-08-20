@@ -52,6 +52,7 @@ def predict_note_authentication(variance,skewness,curtosis,entropy):
 
 
 
+
 def main():
     st.title("Bank Authenticator")
     html_temp = """
