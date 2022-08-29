@@ -1,6 +1,4 @@
 
-from flask import Flask
-from distutils.log import debug
 import numpy as np
 import pickle
 import pandas as pd
