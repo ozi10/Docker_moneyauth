@@ -1,4 +1,6 @@
 
+from flask import Flask
+from distutils.log import debug
 import numpy as np
 import pickle
 import pandas as pd
@@ -7,7 +9,7 @@ import streamlit as st
 
 from PIL import Image
 
-#app=Flask(__name__)
+app=Flask(__name__)
 #Swagger(app)
 
 pickle_in = open("classifier.pkl","rb")
@@ -52,7 +54,7 @@ def predict_note_authentication(variance,skewness,curtosis,entropy):
 
 
 
-
+@app.route('/predict',methods=["Get"])
 def main():
     st.title("Bank Authenticator")
     html_temp = """
@@ -74,4 +76,5 @@ def main():
         st.text("Built with Streamlit")
 
 if __name__=='__main__':
+    app.run(debug=True)
     main()
