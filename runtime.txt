@@ -1,5 +1,2 @@
-<<<<<<< HEAD
 python-3.10.6
-=======
-python-3.10.6
->>>>>>> cca653e1b2aab7142b6b5e0d4a7baa01ecaa8e4f
+
