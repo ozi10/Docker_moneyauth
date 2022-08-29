@@ -1,6 +1,6 @@
-FROM python:3.10
+FROM python:3.10.6
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 EXPOSE 5000
-CMD python flask_api.py
+CMD streamlit run flask_api.py
